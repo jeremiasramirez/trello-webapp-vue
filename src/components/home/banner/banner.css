@@ -1,0 +1,15 @@
+.banner{
+    width:100%;
+    margin-top:-40px;
+    height:90px;
+    /* background-color: whitesmoke; */
+}
+.banner__title{
+   position: relative;
+   color: #444;
+   top:30px;
+   left:-30vw;
+    margin-left:-30px;
+   font-size:20px;
+   
+}

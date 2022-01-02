@@ -1,0 +1,164 @@
+ /* general */
+ *{
+     padding:0;
+     margin:0;
+     font-family: 'ubuntu';
+ }
+
+
+
+
+
+ .task{
+    background-color:white;
+    border:1px solid #eee;
+    border-radius:7px;
+    padding: 7px 8px;
+    height: 116px;
+    border-bottom: 1px solid #eee;
+    
+}
+.title__module{
+    /* margin-top:-2px; */
+    padding:2px;
+    text-align: center;
+}
+.title__module h1{
+    font-size:15px;
+    font-weight:500;
+    margin: 8px 0;
+}
+
+ 
+.options__task{
+    border: 1px solid #eee;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option{
+    display: flex;
+    background-color:#eee;
+    cursor:pointer;
+    border: none;
+    padding: 2px 4px;
+    min-width: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:500;
+    margin: 0 8px;
+}
+.option:hover{
+    opacity:.9;
+    color:#222;
+}
+.option img{
+    width:20px;
+}
+.date__task{
+     font-size: 11px;
+     font-weight:500;
+     color: #666;
+}
+.title{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title__task{
+    font-size: 15px;
+    text-align:left;
+  
+    font-weight:500;
+}
+.content__task{
+    margin-top: 10px;
+    margin-bottom: 10px;
+      text-align:left;
+       font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+.container__do{
+display: flex;
+justify-content: center;
+
+}
+.pending{
+    width:300px;
+    height:500px;
+    
+    background-color:whitesmoke;
+}
+
+
+
+   .doing{
+    width:300px;
+    height:400px;
+    
+    background-color:blue;
+}
+
+
+   .do{
+    width:300px;
+    height:400px;
+    
+    background-color:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
