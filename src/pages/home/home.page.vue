@@ -1,0 +1,13 @@
+<template>
+
+    <div>hola home</div>
+    
+</template>
+
+
+
+<script>
+export default {
+    
+}
+</script>
