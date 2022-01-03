@@ -4,51 +4,60 @@
     <Banner />
 
 
-    <!-- items -->
+    <!-- container-->
     <section class="container__do">
-        <!-- pending items-->
-        <article class="pending">
+
+
+        <!-- pending stacks-->
+        <article class="pending" >
             
             <div class="title__module">
                 <h1>Pending</h1> 
             </div>
+            
+            <div class="no-item" v-if="!pending.length">
+                <img src="../../assets/images/do.svg" alt="">
+                
+            </div>
 
-
-            <div class="task">
+            <div class="task" v-for="( task, index ) in pending" :key="index">
                 <div class="title">
-                    <h1 class="title__task">{{"Title task de la maravilla ultra veloz".substring(0,20)+"..."}}</h1> 
-                    <span class="date__task">10 march 2021</span>
+                    <h1 class="title__task">{{ task.title }}</h1> 
+                    <span class="date__task">{{ task.date }}</span>
                 </div>
+
                 <!--content task  -->
                 <div class="content">
                        <p class="content__task">
-                         {{"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe assumenda sapiente modi sed, voluptate similique ad quaerat ab commodi officiis,".substring(0,90) + "..."}}
+                         {{ task.content}}
                     </p>
                 </div>
 
 
                    <!-- options task  -->
-
-
                    <div class="options__task">
-                      
+                      <button class="option">
+                           <img src="../../assets/images/create.svg" alt="option">
+                       </button>
+
+
                        <button class="option">
                            <img src="../../assets/images/share.svg" alt="option">
                        </button>
                     
                      
 
-                        <button class="option">
+                        <button class="option" v-on:click="moveTo(task)">
                            <img src="../../assets/images/move-to.svg" alt="option">
                        </button>
                         
                         
-                        <button class="option">
+                        <button class="option" v-on:click="deletePending(index)">
                            <img src="../../assets/images/delete.svg" alt="option">
                        </button>
 
 
-                       <button class="option">
+                       <button class="option" v-on:click="complete(task)">
                            <img src="../../assets/images/do.svg" alt="option">
                        </button>
 
@@ -61,15 +70,70 @@
 
         </article>
 
-        <!-- doing -->
-          <!-- <article class="doing">
-            <h1>Hola</h1>
-        </article> -->
+     
 
-        <!-- do -->
-          <!-- <article class="do">
-            <h1>Hola</h1>
-        </article> -->
+     <!-- doing stacks -->
+            <!-- pending stacks-->
+        <article class="pending" >
+            
+            <div class="title__module">
+                <h1>Pending</h1> 
+            </div>
+            
+            <div class="no-item" v-if="!doing.length">
+                <img src="../../assets/images/do.svg" alt="">
+                
+            </div>
+
+            <div class="task" v-for="( task, index ) in doing" :key="index">
+                <div class="title">
+                    <h1 class="title__task">{{ task.title }}</h1> 
+                    <span class="date__task">{{ task.date }}</span>
+                </div>
+
+                <!--content task  -->
+                <div class="content">
+                       <p class="content__task">
+                         {{ task.content}}
+                    </p>
+                </div>
+
+
+                   <!-- options task  -->
+                   <div class="options__task">
+                      <button class="option">
+                           <img src="../../assets/images/create.svg" alt="option">
+                       </button>
+
+
+                       <button class="option">
+                           <img src="../../assets/images/share.svg" alt="option">
+                       </button>
+                    
+                     
+
+                        <button class="option" v-on:click="moveTo(task)">
+                           <img src="../../assets/images/move-to.svg" alt="option">
+                       </button>
+                        
+                        
+                        <button class="option" v-on:click="deleteDoing(index)">
+                           <img src="../../assets/images/delete.svg" alt="option">
+                       </button>
+
+
+                       <button class="option" v-on:click="complete(task)">
+                           <img src="../../assets/images/do.svg" alt="option">
+                       </button>
+
+                        
+                          <button class="option">
+                           <img src="../../assets/images/resize.svg" alt="option">
+                       </button>
+                   </div>
+            </div>
+
+        </article>
     </section>
 
     
@@ -87,11 +151,39 @@ import "./home.page.css";
 export default {
     data(){
         return {
-            pending: [
+            deletePending: (index)=>{
+                this.pending.splice(index,1)
+            },
+            deleteDoing: (index)=>{
+                this.doing.splice(index,1)
+            },
 
+             moveTo: (task)=>{
+                 console.log(task)
+             },
+            
+            addTo:()=>{},
+
+            complete:(task)=>{
+                console.log(task)
+            },
+
+
+
+
+            pending: [
+                {title: "Math", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
+                {title: "Biology", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"},
+                {title: "English", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
+                {title: "Russian class", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"}
+            
             ],
             doing: [
-
+                {title: "Nature", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
+                {title: "Spanish", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"},
+                {title: "Technology", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
+                {title: "Databases II", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"}
+            
             ],
             do: [
 
@@ -103,7 +195,8 @@ export default {
         Banner
     },
 
-    addTo(){}
+
+   
 
 
 
