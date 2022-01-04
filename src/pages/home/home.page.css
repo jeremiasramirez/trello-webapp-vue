@@ -10,7 +10,7 @@
 
 
  .task{
-    background-color:rgba(238, 238, 238, 0.842);
+    background-color:rgba(238, 238, 238, 0.932);
  
     border-radius:7px;
     padding: 7px 8px;
@@ -22,6 +22,10 @@
     /* margin-top:-2px; */
     padding:2px;
     text-align: center;
+    position: sticky;
+    top:-1px;
+
+    background-color: whitesmoke;
     color: #222;
 }
 .title__module h1{
@@ -62,7 +66,7 @@
     margin: 0 8px;
 }
 .option:hover{
-    opacity:.9;
+    /* opacity:.9; */
     color:#222;
 }
 .option img{
@@ -95,9 +99,28 @@
        font-size: 14px;
 }
 
-
-
-
+ 
+.menu__pending p{
+    color:#222;
+    font-weight: 500;
+   font-size:12px;
+   margin-bottom: 5px;
+}
+.menu__pending button{
+    padding:2px;
+    color:white;
+        width: 100px;
+      border-radius: 5px;
+    font-weight: 500;
+    border:none;
+    margin-top:2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px green;
+    background-color: rgb(50, 182, 50);
+}
+.menu__pending button:hover{
+    background-color: rgb(34, 145, 34);
+}
 .no-item {
     margin-top: 60px;
     margin-left:10px;
@@ -124,7 +147,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
- 
+    flex-wrap: wrap;
     background-size: 25%;
 
 }
@@ -134,9 +157,7 @@
     padding: 2px 6px;
     height:520px;
     overflow:auto; 
-    /* overflow-y: scroll;
-    
-    overflow-x: hidden; */
+    margin: 10px 10px;
     scroll-padding: 0;
     border: 1px solid #eee;
     border-radius: 10px;
