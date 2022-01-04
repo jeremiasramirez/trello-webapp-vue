@@ -2,7 +2,9 @@
 
 <template>
         <section class="banner">
-        <h1 class="banner__title">Welcome to Tre-DO</h1>
+       <div class="container__add">
+            <img class="add" src="../../../assets/images/add.svg" alt="create logo">
+       </div>
     </section>
 </template>
 

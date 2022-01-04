@@ -247,24 +247,24 @@ export default {
 
 
             pending: [
-                {title: "Math", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "Biology", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"},
-                {title: "English", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "Russian class", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"}
+                {title: "Math", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "Biology", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"},
+                {title: "English", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "Russian class", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"}
             
             ],
             doing: [
-                {title: "Nature", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "Spanish", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"},
-                {title: "Technology", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "Databases II", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"}
+                {title: "Nature", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "Spanish", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"},
+                {title: "Technology", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "Databases II", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"}
             
             ],
             dod: [
-                {title: "Phisic", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "German", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"},
-                {title: "Francais", content: "Hacer los ejercicios de calculos y geometria analitica", date: "29 march 2021"},
-                {title: "Admin I", content: "Leer libro la genetica y biologia basica de maxwell.", date: "2 Dec 2021"}
+                {title: "Phisic", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "German", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"},
+                {title: "Francais", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "29 march 2021"},
+                {title: "Admin I", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ", date: "2 Dec 2021"}
             
             ]
         }
